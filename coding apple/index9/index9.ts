@@ -54,15 +54,15 @@
 //
 
 // Q1
-let 이미지 = document.querySelector("#image");
-if (이미지 instanceof HTMLImageElement) {
-  이미지.src = "./gitdesk.png";
-}
+// let 이미지 = document.querySelector("#image");
+// if (이미지 instanceof HTMLImageElement) {
+//   이미지.src = "./gitdesk.png";
+// }
 
 // Q2
-let links = document.querySelectorAll(".naver");
-links.forEach((link) => {
-  if (link instanceof HTMLAnchorElement) {
-    link.href = "https://kakao.com";
-  }
-});
+// let links = document.querySelectorAll(".naver");
+// links.forEach((link) => {
+//   if (link instanceof HTMLAnchorElement) {
+//     link.href = "https://kakao.com";
+//   }
+// });
