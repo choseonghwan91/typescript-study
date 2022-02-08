@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function 기계() {
+        this.q = "strike";
+        this.w = "snowball"; // 자식이 직접 가지고 있음
+      }
+
+      기계.prototype.name = "kim"; // 유전자에 추가 하면 자식들은 전부 추가한 속성을 가져다 쓸 수 있음
+      // 부모가 가지고 있어서 nunu 를 찍어도 kim 이 나오지 않음
+      // nunu.name 을 호출하면 nunu에서 찾아보고, 없으면 부모에 찾아보고 없으면 또 그 부모를 찾아봄 (프로토타입 체인)
+
+      let nunu = new 기계();
+
+      let 어레이 = [4, 2, 1];
+      어레이.sort(); // [1,2,4]
+
+      // 아래의 두가지 방법의 결과가 똑같음
+      // let 어레이 = [4,2,1];
+      // let 어레이 = new Array(4,2,1);
+
+      // 어레이에 sort, length 를 쓸 수 있는 이유는 부모에 지정 되어 있기 때문
+
+      // 똑같은 기능을 하는 함수를 만들어서 언제든 가져다 쓰고 싶으면 이런식으로 만들면 됨
+      Array.prototype.함수 = function () {
+        console.log("test");
+      };
+
+      // Array.prototype.함수() 를 콘솔창에 찍으면 'test'가 출력됨
+    </script>
+  </body>
+</html>
