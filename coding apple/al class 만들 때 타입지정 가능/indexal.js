@@ -71,7 +71,7 @@
 // let 사람2 = new Person("park");
 // 사람1.함수();
 //
-// 클래스에서 함수 추가하는 방법
+// 클래스에서 함수 추가하는 방법, #클래스 안에 함수, #클래스 에서 함수 타입 지정
 // class Person {
 //   name: string;
 //   constructor(a: string) {
